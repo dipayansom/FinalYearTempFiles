@@ -58,6 +58,8 @@
                            <form:form action="addDoctor">
                             <input type="submit" value="Add Doctor">
                         </form:form>
+                        
+                        
                         </li>
                         
                         
@@ -91,10 +93,15 @@
                     <a href="#medicineSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Medicine</a>
                     <ul class="collapse list-unstyled" id="medicineSubmenu">
                         <li>
-                            <a href="#">Add Medicine</a>
+                            <!-- <a href="#">Add Medicine</a> -->
+                            <form:form action="addMedicine">
+                            <input type="submit" value="Add Medicine">
+                        </form:form>
                         </li>
                         <li>
                             <a href="medicineDetails.html">Medicine Info</a>
+                              
+                        
                         </li>
                     </ul>
                 </li>

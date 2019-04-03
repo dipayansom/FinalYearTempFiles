@@ -11,6 +11,7 @@ import com.howtodoinjava.entity.AdminEntity;
 import com.howtodoinjava.entity.Doctor;
 import com.howtodoinjava.entity.EmployeeEntity;
 import com.howtodoinjava.entity.Login;
+import com.howtodoinjava.entity.Medicine;
 import com.howtodoinjava.entity.Patient;
 
 @Service
@@ -50,6 +51,15 @@ public class EmployeeManagerImpl implements EmployeeManager {
 	public void addDoctor(Doctor doctor) {
 		// TODO Auto-generated method stub
 		employeeDAO.addDoctor(doctor);
+		
+	}
+
+
+	@Override
+	public void addMedicine(Medicine medicine) {
+		// TODO Auto-generated method stub
+		
+		employeeDAO.addMedicine(medicine);
 		
 	}
 

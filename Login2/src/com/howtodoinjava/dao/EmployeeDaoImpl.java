@@ -22,6 +22,7 @@ import com.howtodoinjava.entity.AdminEntity;
 import com.howtodoinjava.entity.Doctor;
 import com.howtodoinjava.entity.EmployeeEntity;
 import com.howtodoinjava.entity.Login;
+import com.howtodoinjava.entity.Medicine;
 import com.howtodoinjava.entity.Patient;
 
 @Repository
@@ -92,6 +93,16 @@ public class EmployeeDaoImpl implements EmployeeDAO,UserDetailsService  {
 			// TODO Auto-generated method stub
 			
 			this.sessionFactory.getCurrentSession().save(doctor);
+			
+		}
+
+
+		@Override
+		@Transactional
+		public void addMedicine(Medicine medicine) {
+			// TODO Auto-generated method stub
+			
+			sessionFactory.getCurrentSession().save(medicine);
 			
 		}
 }

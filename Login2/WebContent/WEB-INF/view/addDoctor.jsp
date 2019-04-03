@@ -23,6 +23,8 @@
 	rel="stylesheet" />
 <link href='<spring:url value="/css/jquery-ui.min.css"/>'
 	rel="stylesheet" />
+	
+	
   <title>ADD PATIENT</title>
 </head>
 
@@ -32,6 +34,9 @@
       <div class="container">
         <div class="col-md-6 col-md-offset-3">
           <div class="signup-content">
+          
+          
+          
           
           
             <form:form method="POST" id="signup-form" class="signup-form" action="commitAddDoctor" commandName="doctor">
@@ -50,8 +55,12 @@
                 <form:input type="number" class="form-control input-lg" path="age" id="age" min="13" max="100" placeholder="Age" required="required" />
               </div>
 
+
+
               <div class="form-group">
-                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo" id="gender"><span id="genderText">Gender</span></button>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo" id="gender">
+                	<span id="genderText">Gender</span>
+                </button>
                 <div id="demo" class="collapse">
                   <div class="radio">
                     <label><form:input type="radio" path="gender" value="Male"/>Male</label>
@@ -158,6 +167,15 @@
               
                          <input type="submit" class="form-input" name="" id="submit" value="Add" />
             </form:form>
+            
+            
+            
+            
+            
+            
+            
+            
+            
         
           </div>
         </div>

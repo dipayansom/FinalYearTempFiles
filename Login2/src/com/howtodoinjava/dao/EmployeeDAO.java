@@ -8,6 +8,7 @@ import com.howtodoinjava.entity.AdminEntity;
 import com.howtodoinjava.entity.Doctor;
 import com.howtodoinjava.entity.EmployeeEntity;
 import com.howtodoinjava.entity.Login;
+import com.howtodoinjava.entity.Medicine;
 import com.howtodoinjava.entity.Patient;
 
 @SuppressWarnings("unused")
@@ -17,6 +18,7 @@ public interface EmployeeDAO
     public List<AdminEntity> getAllEmployees();
     public void addPatient(Patient patient);
     public void addDoctor(Doctor doctor);
+    public void addMedicine(Medicine medicine);
     /*public void deleteEmployee(Integer employeeId);
     public UserDetails loadUserByUsername(String username);*/
 }

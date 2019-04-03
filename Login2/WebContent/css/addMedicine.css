@@ -1,0 +1,84 @@
+body {
+    line-height: 1.8;
+    color: #222;
+    background-image: url("../images/doctor1.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 115px 0;
+    }
+  .signup-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 50px 85px;
+  
+    }
+  #submit {
+    width: 100%;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    background: linear-gradient(to bottom left, #0066ff 0%, #66ccff 100%); 
+    }
+  #eye {
+    float: right;
+    margin-right:20px;
+    margin-top: -30px;
+    position: relative;
+    z-index:1;
+  }
+  h2 {
+    line-height: 1.66;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #222;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px; 
+    }
+  .label-agree-term {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+     }
+  .term-service {
+    color:#005ce6;
+     }
+  .loginHere {
+    color: #555;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 5px; 
+    }
+  .loginhere-link {
+    font-weight: 700;
+    color: #222;
+     }
+  
+  
+   #prescribedFor
+   {
+       background-color: #fff;
+       border-color:#b3b3b3;
+       border-radius:7px;
+       padding:2%;
+       padding-right:85.5%;
+       color:#a9a9a9;
+   }
+  
+  
+  
+  #prescribedForText
+  {
+   font-family: Arial, Helvetica, sans-serif;
+       font-size: 135%;
+       font-weight: 400;
+   }

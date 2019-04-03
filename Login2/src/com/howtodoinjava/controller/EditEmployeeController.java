@@ -16,6 +16,7 @@ import com.howtodoinjava.entity.AdminEntity;
 import com.howtodoinjava.entity.Doctor;
 import com.howtodoinjava.entity.EmployeeEntity;
 import com.howtodoinjava.entity.Login;
+import com.howtodoinjava.entity.Medicine;
 import com.howtodoinjava.entity.Patient;
 import com.howtodoinjava.service.EmployeeManager;
  
@@ -153,17 +154,27 @@ public class EditEmployeeController {
         return "redirect:/list";
     }
     
+    
+    
+    
+    
+    
     @RequestMapping(value="/addDoctor", method = RequestMethod.POST)
     public String addDoctor(ModelMap modelMap){
-    	System.out.println("------------------------------------------------------------------------REDIRECT");
+    	
     	modelMap.addAttribute("doctor", new Doctor());
+    	
+    	if(log.isDebugEnabled()){
+    		log.debug("Start Debug");
+    	}
+    	log.info("Going to add Doctor page");
     	return "addDoctor";
     }
     
     
     @RequestMapping(value="/commitAddDoctor", method = RequestMethod.POST)
     public String commitAddDoctor(@ModelAttribute("doctor") Doctor doctor, BindingResult bindingResult){
-    	System.out.println("------------------------------------------------------------------------CONTROLLER");
+    	
 
     	if(log.isDebugEnabled()){
     		log.debug("Start Debug");
@@ -176,6 +187,37 @@ public class EditEmployeeController {
         return "redirect:/list";
     	
     }
+    
+    
+    @RequestMapping(value="/addMedicine", method = RequestMethod.POST)
+    public String addMedicine(ModelMap modelMap){
+    	
+    	modelMap.addAttribute("medicine", new Medicine());
+    	if(log.isDebugEnabled()){
+    		log.debug("Start Debug");
+    	}
+    	log.info("Going to add Medicine page");
+    	return "addMedicine";
+    	
+    }
+    
+    
+    @RequestMapping(value="/commitAddMedicine", method=RequestMethod.POST)
+    public String commitAddMedicine(@ModelAttribute("medicine") Medicine medicine, BindingResult bindingResult){
+    	
+    	
+     	if(log.isDebugEnabled()){
+    		log.debug("Start Debug");
+    	}
+    	log.info("Going to Add Medicine");
+    	
+    	employeeManager.addMedicine(medicine);
+        
+        log.info("Exiting Add Medicine");
+        return "redirect:/list";
+    }
+    
+    
     
     
     
